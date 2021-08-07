@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: ShopifySans, Helvetica, Arial, sans-serif;
+}
+
+:root{
+    --white: #fff;
+    --black: #000;
+    --darkblue: rgb(31, 53, 64);
+    --darkgreen:#008060;
+    --lightgray:#42474c;
+    --lightyellow:#ffd173;
+    --darkturquoise:hsl(182, 75%, 17%);
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav3{
+    position: fixed;
+    top: 0px;
+    display: flex;
+    background-color: var(--white);
+    justify-content: space-between;
+    align-items: center;
+    color: var(--darkturquoise);
+    width: 100%;
+    height: 90px;
+    margin: 0px auto;
+    /* 2 thuộc tính của padding -> Trên-dưới và trái-phải */
+    padding:0px 20px;
+    z-index: 2;
+   
+}
+
+.nav3-icon{
+    display: inline-block;
+}
+
+.nav3-a2,.nav3-a3{
+    color: var(--lightgray);
+}
+
+.nav3-icon+.nav3-icon{
+    margin-left: 20px;
+}
+
+.nav3-a2:hover{
+    color: var(--lightyellow);
+    opacity: 0.6;
+}
+
+.prototype{
+    width: 100%;
+    height: 600px;
+    background: url("https://cdn.shopify.com/s/files/1/1684/9641/files/Rooted_in_Boarding_1080x.jpg?v=1623696007");
+    background-size: cover;
+    margin-top: 60px;
+} 
+
+.poster-underling{
+    display: flex;
+    width: 30%;
+    height: 100%;
+    background-color: var(--darkblue);
+    padding: 100px 4%;
+    position: relative;
+}
+
+
+
+
+.middle{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.poster-underling1 h1,h2,p {
+    color: var(--white);
+}
+
+
+.btn-p1{
+    background-color:  lightyellow;
+    padding: 10px 20px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+ 
+.btn-p1:hover{
+    background-color: yellow;
+    color: var(--darkblue);
+    transition: 0.6s;
+}
+
+.athletic {
+    width: 100%;
+    height: 600px;
+    /* Tìm ảnh sau nhé e  */
+    background: url("https://cdn.shopify.com/s/files/1/1684/9641/files/Loft_Theme_Shopify_-_Lawrence_-_Athletic_Hero_Image_-_2_1080x.jpg?v=1623516341");
+    background-size: cover;
+    margin-top: 60px;
+}
+.btn-p2 {
+    border: 1px solid black;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: lightyellow;
+    transition: background-color 0.05s ;
+    cursor: pointer;
+}
+.btn-p2:hover {
+    background-color: black;
+    color: white;
+    transition-delay: 0.05s;
+}
+.bg-yellow {
+    background-color: lightyellow;
+}
+.brand {
+    width: 100%;
+    /* height: 600px; */
+    display: flex;
+    flex-direction: column;
+    padding: 32px 48px;
+}
+
+.brand h1,span{
+    padding-bottom: 15px;
+}
+
+.brand a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 50px;
+    border: 1px solid var(--black);
+    color: var(--darkturquoise);
+}
+
+.brand a:hover{
+    color: var(--white);
+    background-color: var(--lightyellow);
+    border: var(--lightyellow) solid 1px;
+}
+
+/* span thì width height chỉ đủ để chứa nội dung
+span có display:INLINE -> k thay đổi width height dc tuy nhiên cho nằm cùng 1 dòng
+div có display:block -> Thay đổi width height nhưng vẫn k cho cacsther khác nằm cùng dòng vớiminhf */
+
+/* Về cơ bản là dùng media query */
+/* @media screen and(.....) {
+    
+} */
+/* Cứ tự đoc..... */
+
+/* Cái này nghĩa là khi độ rộng thiết bị < 480px
+Thì cái post kia sẽ cócwidth = 60% */
+/* @media (max-width: 725px) {
+    .poster-underling {
+      width:60%
+    }
+    *{
+        font-size: 25px;
+    }
+  }
+
+   */
+
+
+.favourite {
+    width: 100%;
+    height: 600px;
+    padding: 20px 52px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+.title {
+    width: 100%;
+    height: 30%;
+}
+.phan-duoi {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+.anhto {
+    width: 44%;
+    height: 100%;
+}
+.anhto img {
+    width: 100%;
+    height: 100%;
+}
+.anhnho {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 24px;
+}
+.item {
+    width: 45%;
+    height: 100%;
+    box-shadow: 1px 1px 1px 1px rgb(204 195 195);
+}
+.item img {
+    width: 100%;
+    height: 80%;
+}
+
+
+.vid-silent{
+    width: 100%;
+    height: 700px;
+}
+
+.vid-silent video {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+/* shop by type */
+.shopbytype {
+    width: 100%;
+    height: 600px;
+    padding: 0px 52px;
+}
+.shopbytype h1 {
+    height: 30%;
+}
+
+.shopbytype .phanduoi {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.phanduoi img {
+    width: 30%;
+    height: 80%;
+}
+
+ 
