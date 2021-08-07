@@ -114,6 +114,11 @@
     background-size: cover;
     margin-top: 60px;
 }
+
+.title p,h1{
+    color: #000;
+    padding-bottom: 15px;
+}
 .btn-p2 {
     border: 1px solid black;
     width: 100px;
@@ -159,6 +164,61 @@
     background-color: var(--lightyellow);
     border: var(--lightyellow) solid 1px;
 }
+
+.footer{
+    width: 100%;
+    height: 400px;
+    background-color: #41627E;
+    margin-top: 60px;
+}
+
+.footer--son{
+    padding: 80px 100px;
+}
+
+.upper{
+    display: flex;
+    justify-content: space-between;
+    height: 120px;
+}
+.upper--son1 h2 {
+    margin-bottom: 40px;
+}
+.upper--son2 {
+    position: relative;
+    width: 500px;
+    height:45px ;
+}
+
+.upper--son2 input {
+    background-color: #41627E;
+    color: white;
+    width: 100%;
+    height: 100%;
+    border: 1px solid white;
+    padding-left: 8px;
+    font-size: 18px;
+    outline: none;
+}
+.upper--son2 input::placeholder { 
+    color: white;
+    opacity: 1; 
+}
+.upper--son2 button {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 40%;
+    height: 100%;
+    border: none;
+}
+.under{
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 40px;
+}
+
 
 /* span thì width height chỉ đủ để chứa nội dung
 span có display:INLINE -> k thay đổi width height dc tuy nhiên cho nằm cùng 1 dòng
